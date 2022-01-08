@@ -9,11 +9,9 @@ sidebar:
   nav: "docs"
 ---
 
-![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12/01_1.png)
-
 # Project
 
-**React 개인 프로젝트 Form Data 수정**
+**React 개인 프로젝트 weekly data fetching**
 
 ## React 개인 프로젝트
 
