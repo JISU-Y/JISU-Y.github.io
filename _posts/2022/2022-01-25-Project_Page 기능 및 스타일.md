@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Project] 번역가 페이지 기능 구현 (2)"
+title: "[Project] 번역가 페이지 기능 구현 (3)"
 categories: Project
 tag: [Project, React, 팀 프로젝트]
 toc: true
