@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] javascript 개념"
-categories: web
+categories: Javascript
 tag: [TIL, javascript, var, let, const, hoisting, closure]
 toc: true
 author_profile: true

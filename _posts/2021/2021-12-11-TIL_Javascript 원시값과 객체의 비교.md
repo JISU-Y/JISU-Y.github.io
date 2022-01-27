@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Javascript - 원시값과 객체의 비교"
-categories: web
+categories: Javascript
 tag: [TIL, Javascript, 원시값, 객체]
 toc: true
 author_profile: true

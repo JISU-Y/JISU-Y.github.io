@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Javascript - 비동기 통신 apis"
-categories: web
+categories: Javascript
 tag: [TIL, Javascript, 비동기, 객체]
 toc: true
 author_profile: true

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Javascript - 제너레이터 / async/await"
-categories: web
+categories: Javascript
 tag: [TIL, Javascript, 제너레이터, async, await]
 toc: true
 author_profile: true

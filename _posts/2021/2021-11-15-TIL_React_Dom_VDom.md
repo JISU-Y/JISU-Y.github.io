@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] React - DOM 과 Virtual DOM"
-categories: web
+categories: React
 tag: [TIL, React, DOM, Virtual DOM]
 toc: true
 author_profile: true

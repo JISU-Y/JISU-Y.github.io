@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] React - input warning / Javascript - ajax"
-categories: web
+categories: Javascript
 tag: [TIL, Javascript, React, ajax]
 toc: true
 author_profile: true

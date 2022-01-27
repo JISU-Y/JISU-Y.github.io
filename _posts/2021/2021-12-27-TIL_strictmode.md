@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[MJS] this"
+title: "[TIL] Javascript - strict mode"
 categories: Javascript
 tag: [MJS, Javascript, strict mode]
 toc: true

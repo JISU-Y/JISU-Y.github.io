@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "[TIL] 자료구조 및 알고리즘 - Queue / Javascript - Promise"
-categories: web
-tag: [TIL, Javascript, React, ajax]
+categories: Javascript
+tag: [TIL, Javascript, ajax, 자료구조, 알고리즘, Queue, 큐]
 toc: true
 author_profile: true
 sidebar:

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Vanilla.JS Team Project - 5일차"
-categories: web
+categories: Project
 tag: [TIL, VanillaJS, html, css, bootcamp]
 toc: true
 author_profile: true

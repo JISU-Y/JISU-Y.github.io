@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[TIL] Javascript - AWS S3 배포 및 NPM"
+title: "[TIL] React, Web - AWS S3 배포 및 NPM"
 categories: web
 tag: [TIL, React, Javascript, AWS S3, 배포, 패키지 매니저, NPM, YARN]
 toc: true

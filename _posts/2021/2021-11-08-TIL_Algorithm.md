@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Algorithm - 1일차"
-categories: web
+categories: Algorithm
 tag: [TIL, VanillaJS, html, css, bootcamp]
 toc: true
 author_profile: true

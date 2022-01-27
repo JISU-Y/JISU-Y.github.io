@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] React - JSX | postCSS"
-categories: web
+categories: React
 tag: [TIL, React, JSX, git, postCSS]
 toc: true
 author_profile: true

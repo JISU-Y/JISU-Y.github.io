@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Javascript - 객체의 분류"
-categories: web
+categories: Javascript
 tag: [TIL, Javascript, 객체, 표준 빌트인 객체, 호스트 객체]
 toc: true
 author_profile: true

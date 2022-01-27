@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Javascript - Event Loop / React - useState"
-categories: web
+categories: Javascript
 tag: [TIL, Javascript, Event Loop, React, useState, 비동기]
 toc: true
 author_profile: true

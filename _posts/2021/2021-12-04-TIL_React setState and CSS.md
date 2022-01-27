@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] React - setState / CSS - vertical align center"
-categories: web
+categories: React
 tag: [TIL, React, useState, CSS]
 toc: true
 author_profile: true

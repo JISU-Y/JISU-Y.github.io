@@ -21,3 +21,9 @@ docs:
         url: /categories/javascript
       - title: "Web"
         url: /categories/web
+      - title: "Project"
+        url: /categories/project
+      - title: "Algorithm"
+        url: /categories/algorithm
+      - title: "React"
+        url: /categories/react

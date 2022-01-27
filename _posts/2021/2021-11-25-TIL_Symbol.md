@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Javascript - Symbol"
-categories: web
+categories: Javascript
 tag: [TIL, Javascript, Symbol]
 toc: true
 author_profile: true

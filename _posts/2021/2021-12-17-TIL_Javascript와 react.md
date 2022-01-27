@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Javascript, React - 전역 변수 문제점, 클래스 컴포넌트"
-categories: web
+categories: Javascript
 tag: [TIL, Javascript, React, 전역 변수, 클래스 컴포넌트]
 toc: true
 author_profile: true

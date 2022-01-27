@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[TIL] Javascript - 실행 컨텍스트와 axios"
-categories: web
+categories: Javascript
 tag: [TIL, Javascript, 원시값, 객체]
 toc: true
 author_profile: true
@@ -148,7 +148,6 @@ sidebar:
          
          </aside>
 
-
   3. 렉시컬 환경
 
      > 렉시컬 환경(Lexical Environment)은 식별자(변수 등)와 식별자에 바인딩된 값,
@@ -184,7 +183,6 @@ sidebar:
          이를 <strong>스코프 체인</strong>이라고 하며 스코프가 중첩되어있는 모든 상황에서 발생한다.
          
          </aside>
-
 
      ```jsx
      let a = 1;
