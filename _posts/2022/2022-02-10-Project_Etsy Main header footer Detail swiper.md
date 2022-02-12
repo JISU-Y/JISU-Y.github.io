@@ -35,6 +35,8 @@ css를 import 하지 않은 것이 있었다 (fade 관련)
 
 일단, 해당 사진 처럼 구현하고자 했다.
 
+![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022-02/10_01.JPG)
+
 큰 이미지가 있고, 모든 이미지들의 썸네일을 navigation을 사용할 수 있는 형태이다.
 
 이 부분은 swiper에서 쉽게 구현이 가능하다.
