@@ -35,7 +35,7 @@ sidebar:
 
 TabContents안에 tabProductList 요소들이 6개가 들어가고, 그 6개를 다음과 같이 정렬해야 했다.
 
-![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12/15_01.JPG)
+![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022-02/15_01.JPG)
 
 먼저 grid를 나누어 보면 작은 그림이 큰 그림의 1/2이다. 그러면, 총 column grid는 6개, row는 2개가 필요하다고 생각했다.
 
@@ -83,7 +83,7 @@ grid-template-areas에서
 
 #### section 분리
 
-![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12/15_02.JPG)
+![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022-02/15_02.JPG)
 
 이미지 슬라이더 부분, 오른쪽 제품 정보, review 부분 이렇게 크게 세 가지 section으로 구분될 수 있을 것 같아 바로 sections 폴더에 모아서 구현했다.
 
