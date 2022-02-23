@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Course / TIL] Wanted Pre Onboarding FE Course 1주차 - study: DOM, 팀 과제"
-categories: Project
+categories: Course
 tag: [Course, TIL, Wanted, PreOnboarding, DOM, 면접 대비]
 toc: true
 author_profile: true
