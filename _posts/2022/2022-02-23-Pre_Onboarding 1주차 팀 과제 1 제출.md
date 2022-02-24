@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[Course / TIL] Wanted Pre Onboarding FE Course 1주차 - study: bundling, 팀 과제"
+title: "[Course / TIL] Wanted Pre Onboarding FE Course 1주차 - study: bundling, 팀 과제 1 제출"
 categories: Course
-tag: [Course, TIL, Wanted, PreOnboarding, bundling, 면접 대비]
+tag: [Course, TIL, Wanted, PreOnboarding, bundling]
 toc: true
 author_profile: true
 sidebar:
