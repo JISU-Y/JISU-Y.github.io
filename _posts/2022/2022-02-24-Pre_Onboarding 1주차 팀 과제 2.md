@@ -23,8 +23,6 @@ sidebar:
 
 - tailwind
 - React
-- 라이브러리
-  - react-sortable (Drag & Drop) ⇒ 미정
 
 #### 기능 명세 확인
 
