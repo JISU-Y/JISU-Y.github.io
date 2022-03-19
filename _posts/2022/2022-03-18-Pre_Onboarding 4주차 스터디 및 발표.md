@@ -138,6 +138,20 @@ tranlate은 useRef를 통해 style.transform에 동적으로 할당하며 슬라
 
 ### GraphQL
 
+#### GraphQL이란?
+
+> Graph + Query Language 줄임말. API를 위한 쿼리 언어라고 할 수 있다.
+
+GraphQL은 클라이언트 요청에 따라 유연하게 트리 주고의 JSON 데이터를 응답으로 전송할 수 있다. (클라이언트 요청에 따라 유연하게 자원을 가져올 수 있다)
+
+#### GraphQL keywords
+
+- Query: 저장된 데이터 가져오기 (REST의 GET과 비슷)
+- Mutation: 저장된 데이터 수정하기
+  - Create: 데이터 생성 / 추가
+  - Update: 기존 데이터 수정
+  - Delete: 기존 데이터 삭제
+
 ## 회고 (TIL)
 
 **2022.03.18 Daily 회고**
@@ -145,6 +159,7 @@ tranlate은 useRef를 통해 style.transform에 동적으로 할당하며 슬라
 ✏오늘 한 일
 
 - 팀 과제 발표 준비 및 발표
+- GraphQL study
 - 면접 대비 공부
 
 ⁉느낀 점
