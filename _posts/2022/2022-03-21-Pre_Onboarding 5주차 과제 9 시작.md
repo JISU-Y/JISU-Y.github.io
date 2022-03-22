@@ -58,6 +58,7 @@ useEffect(() => {
 ```
 
 **해결**
+
 따라서 page를 store에서 관리하도록 변경했다.  
 컴포넌트에서는 page를 1씩 올려주는 역할만하고, 나머지 연산(page를 set하거나 item을 page 별로 나누거나)은 reducer에서 하도록 했다.
 
@@ -97,7 +98,7 @@ useEffect(() => {
 
 data를 이전 것을 먼저 비워 준 후 다시 새로 fetch한 data를 할당하니 이전 결과는 보이지 않게 되었다.
 
-**구현 결과**
+**구현 결과**  
 ![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022-03/21_01.gif)
 
 #### feedback 추가
@@ -307,7 +308,7 @@ pageNumbers는 [1, 2, 3, 4 ...] totalPage 만큼 들어있다.
 </PagesWrapper>
 ```
 
-**구현 결과**
+**구현 결과**  
 ![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022-03/21_02.gif)
 
 페이지네이션.. 생각보다 너무 재미있었다.
