@@ -114,7 +114,7 @@ export const GrayBox = styled.div`
 
 ![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022-03/22_04.png)
 
-**로딩 애니미에션**
+**로딩 애니메이션**
 
 위의 요소만 가만히 있는다면 살아있는 느낌이 나지 않을 것이다.  
 따라서 보통 왼쪽에서 오른쪽으로 흰색 선이 움직이도록 구현하려고 했다.
