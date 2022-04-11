@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[TIL] GraphQL 연습
+title: "[TIL] GraphQL 연습"
 categories: TIL
 tag: [TIL, GraphQL]
 toc: true
