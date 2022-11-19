@@ -123,20 +123,20 @@ sidebar:
         const successList = []
         
         for(id of IdList) { // 모든 IdList를 돌아
-        		const { data } = await updateData(id); // 하나씩 id를 넣어 api 하나하나 요청
-        
-        		if(data) {
-        			successList.push(data.id)
-        		}
+          const { data } = await updateData(id); // 하나씩 id를 넣어 api 하나하나 요청
+      
+          if(data) {
+            successList.push(data.id)
+          }
         }
         console.log(successList)
         
-        console.timeEnd('download all');
+        console.timeEnd('post all');
         ```        
         
       - 결과
             
-        post all data - for: 1731.0380859375 ms
+        post all - for: 1731.0380859375 ms
         
         console 또한 차례차례 찍힌다. (하나씩 api를 요청하고 데이터를 나타내므로)
         
