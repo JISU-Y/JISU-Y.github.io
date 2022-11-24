@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[Typescript] Typescript의 Conditional Type, Infer Type, Type guard"
-categories: Typescript
-tag: [Typescript, util type]
+title: "[Javascript] pure CSS vs Javascript components 구현 차이 및 장단점"
+categories: Jypescript
+tag: [Javascript, CSS]
 toc: true
 author_profile: true
 sidebar:
@@ -236,7 +236,7 @@ _(사실 css in js도 성능에 대한 사람들의 회의가 꽤 있어왔고, 
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
-   
+
   메뉴를 클릭하면 그에 따른 컨텐츠를 보여주는 Tab 컴포넌트
 
   **js:**
