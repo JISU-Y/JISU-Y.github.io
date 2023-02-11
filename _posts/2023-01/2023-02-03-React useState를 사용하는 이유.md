@@ -17,8 +17,8 @@ sidebar:
 <aside style='background-color : gold; opacity: 0.8; padding: 10px 20px'>
 ⚠️ warning!
 
-useState를 사용하는 이유 자체가 딱딱 떨어지게 몇 가지로 설명되는 것은 아니라고 생각합니다.
-일단 조금이라도 더 근본적이고 사실에 가까울 수 있도록 공식문서를 참조했고, 이해한 결과를 설명했습니다.
+useState를 사용하는 이유 자체가 딱딱 떨어지게 몇 가지로 설명되는 것은 아니라고 생각합니다.  
+일단 조금이라도 더 근본적이고 사실에 가까울 수 있도록 공식문서를 참조했고, 이해한 결과를 설명했습니다.  
 따라서 각자 판단하길 바라며 혹시나 잘못된 정보가 있는 경우 댓글을 통해서 알려주시면 감사하겠습니다! 🙇
 
 </aside>
@@ -31,11 +31,11 @@ React에서 컴포넌트마다 데이터/상태/변수를 사용할 때 `useStat
 state를 이용해서 변수를 사용해야 할까?
 
 <aside style='background-color : gold; opacity: 0.8; padding: 10px 20px'>
-👉 문서를 읽고 파악한 이유는 다음과 같다.
-
-- React에서는 **지역 변수로 화면을 리렌더링 할 수 없기** 때문.
-- React에서 **불변성**을 지켜야 함.
-- 컴포넌트마다 **private한 state**를 가질 수 있도록 해줌.
+👉 문서를 읽고 파악한 이유는 다음과 같다.  
+  
+- React에서는 <strong>지역 변수로 화면을 리렌더링 할 수 없기</strong> 때문.
+- React에서 <strong>불변성</strong>을 지켜야 함.
+- 컴포넌트마다 <strong>private한 state</strong>를 가질 수 있도록 해줌.
 </aside>
 
 <hr />
@@ -146,7 +146,7 @@ export default function Agreement() {
 
 [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Immutable)에서는 다음과 같이 설명하고 있다.
 
-> An immutable value is one whose content cannot be changed without creating an entirely new value.
+> An immutable value is one whose content cannot be changed without creating an entirely new value.  
 > 즉, immutablility는 완전 **새로운 변수를 생성하지 않는 이상 그 내용/값을 바꿀 수 없다는 것.**
 
 **원시 타입(primitive type)**
@@ -177,11 +177,11 @@ const stringArr = ["a", "b", "c"];
 stringArr.push("d"); // 메모리 영역 그대로 원본을 변경한다.
 ```
 
-### **React에서 state**
+### React에서 state
 
 state는 객체이다.
 
-> `props` and `state` are both plain JavaScript objects.
+> `props` and `state` are both plain JavaScript objects.  
 > 출처: [React 공식 문서](https://reactjs.org/docs/faq-state.html#what-is-the-difference-between-state-and-props)
 
 따라서 state를 직접 mutate 할 수 있다.
@@ -216,12 +216,11 @@ export default function Agreement() {
 }
 ```
 
-![agreement_wrong_2]({{ site.url }}{{ site.baseurl }}/assets/images/2023-02/agreement_wrong_2.gif)
+![agreement_wrong_mutate]({{ site.url }}{{ site.baseurl }}/assets/images/2023-02/agreement_wrong_mutate.gif)
 
 “동의” 체크 박스를 클릭했을 경우, “먼저 동의해주세요” 버튼이 “다음 단계” 버튼으로 색과 함께 변경되어야 하지만 변경되지 않는다.
 
-🥰 React에서 **안전한 상태 관리**를 위해 **불변성**을 지켜주어야 한다.
-
+🥰 React에서 **안전한 상태 관리**를 위해 **불변성**을 지켜주어야 한다.  
 ⇒ React 몰래 state를 mutate하지 말아야 한다.
 
 setState는 React가 **immutability를 지키면서 state를 업데이트**할 수 있도록 해준다.
@@ -230,11 +229,12 @@ setState는 React가 **immutability를 지키면서 state를 업데이트**할 �
 
 ## 컴포넌트마다 **private한 state**를 가질 수 있도록 해준다.
 
-[state는 해당 컴포넌트만을 위한 프라이빗한 변수이다.](https://codesandbox.io/embed/heuristic-kapitsa-ymnkue?fontsize=14&hidenavigation=1&theme=dark)
+> state는 해당 컴포넌트만을 위한 프라이빗한 변수이다.  
+> 출처: [React 공식 문서](https://beta.reactjs.org/learn/state-a-components-memory#state-is-isolated-and-private)
 
 ### 컴포넌트 재활용
 
-> 만약 특정 화면에서 그 **컴포넌트를 여러 번 렌더**시킨다면? (컴포넌트 재활용)
+> 특정 화면에서 **컴포넌트를 여러 번 렌더**(컴포넌트 재활용)시켜도 각각 따로 state를 가지고 있어야 한다.
 
 **useState로 관리한 state**
 
@@ -243,6 +243,19 @@ setState는 React가 **immutability를 지키면서 state를 업데이트**할 �
 한 컴포넌트의 state가 변경되어도 다른 컴포넌트의 state에 영향이 가지 않는다.
 
 ```javascript
+// App.jsx
+import Agreement from "./Agreement";
+import "./styles.css";
+
+export default function App() {
+  return (
+    <div className="App">
+      <Agreement />
+      <Agreement />
+    </div>
+  );
+}
+
 // Agreement.jsx
 import { nanoid } from "nanoid";
 import { useState } from "react";
@@ -274,7 +287,7 @@ export default function Agreement() {
 }
 ```
 
-![agreement_private_right]({{ site.url }}{{ site.baseurl }}/assets/images/2023-02/agreement_private_right.gif)
+![agreement_duplication_right]({{ site.url }}{{ site.baseurl }}/assets/images/2023-02/agreement_duplication_right.gif)
 
 왼쪽의 “동의” 체크박스와 오른쪽의 “동의” 체크박스는 각각 독립적으로 동작한다.
 
@@ -324,7 +337,7 @@ export default function Agreement() {
 }
 ```
 
-![agreement_private_wrong]({{ site.url }}{{ site.baseurl }}/assets/images/2023-02/agreement_private_wrong.gif)
+![agreement_duplication_wrong]({{ site.url }}{{ site.baseurl }}/assets/images/2023-02/agreement_duplication_wrong.gif)
 
 “동의”를 클릭할 때마다 약관 내용 옆 숫자가 1씩 증가하도록 해두었다. 다른 컴포넌트 임에도 변수가 공유되고 있다.
 
@@ -420,7 +433,7 @@ export default function Agreement() {
 }
 ```
 
-![count_no_rerender]({{ site.url }}{{ site.baseurl }}/assets/images/2023-02/count_no_rerender.gif)
+![count_no_render_highlight]({{ site.url }}{{ site.baseurl }}/assets/images/2023-02/count_no_render_highlight.gif)
 
 브라우저 React debug tool로 렌더링을 확인해보면 리렌더가 일어나지 않는다.
 
@@ -494,14 +507,12 @@ setCount를 3번 부르면 전달된 updater function들이 queue에 저장되�
 
 ### 우리가 State 사용할 때 주의할 점
 
-React [공식 문서에 성능 최적화 부분](https://reactjs.org/docs/optimizing-performance.html#the-power-of-not-mutating-data)에 나와 있다.
-
+React [공식 문서에 성능 최적화 부분](https://reactjs.org/docs/optimizing-performance.html#the-power-of-not-mutating-data)에 나와 있다.  
 → 사실 성능을 최적화 한다기 보다 불변성을 지켜 안전성을 유지한다는 이야기 같다.
 
 ```jsx
 const [alphabetArr, setAlphabetArr] = useState(["a", "b", "c"]);
 
-//
 const addAlphabetWrong = () => {
   alphabetArr.push("d");
 };
@@ -511,8 +522,7 @@ const addAlphabetRight = () => {
 };
 ```
 
-immutability를 지켜야 하므로 setState를 사용해서 state를 업데이트할 때
-
+immutability를 지켜야 하므로 setState를 사용해서 state를 업데이트할 때  
 직접 object/array를 mutate하지 말고, immutable하게 spread syntax를 사용해서 업데이트하면 더욱 안전하다.
 
 ### 참고 아티클
