@@ -16,9 +16,11 @@ sidebar:
 
 <aside style='background-color : gold; opacity: 0.8; padding: 10px 20px'>
 ⚠️ warning!
-
+<br />
 useState를 사용하는 이유 자체가 딱딱 떨어지게 몇 가지로 설명되는 것은 아니라고 생각합니다.  
+<br />
 일단 조금이라도 더 근본적이고 사실에 가까울 수 있도록 공식문서를 참조했고, 이해한 결과를 설명했습니다.  
+<br />
 따라서 각자 판단하길 바라며 혹시나 잘못된 정보가 있는 경우 댓글을 통해서 알려주시면 감사하겠습니다! 🙇
 
 </aside>
@@ -32,9 +34,11 @@ state를 이용해서 변수를 사용해야 할까?
 
 <aside style='background-color : gold; opacity: 0.8; padding: 10px 20px'>
 👉 문서를 읽고 파악한 이유는 다음과 같다.  
-  
+<br />
 - React에서는 <strong>지역 변수로 화면을 리렌더링 할 수 없기</strong> 때문.
+<br />
 - React에서 <strong>불변성</strong>을 지켜야 함.
+<br />
 - 컴포넌트마다 <strong>private한 state</strong>를 가질 수 있도록 해줌.
 </aside>
 
