@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Javascript] pure CSS vs Javascript components 구현 차이 및 장단점"
-categories: Jypescript
+categories: Javascript
 tag: [Javascript, CSS]
 toc: true
 author_profile: true
