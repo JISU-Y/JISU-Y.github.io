@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "[Browser] Page Visibility API"
-categories: Browser
-tag: [Browser, Browser api]
+categories: Web
+tag: [Web, Browser, Browser api]
 toc: true
 author_profile: true
 sidebar:
