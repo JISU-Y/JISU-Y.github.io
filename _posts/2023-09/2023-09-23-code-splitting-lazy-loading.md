@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[React] Code splitting과 Lay-loading"
+title: "[React] Code splitting과 Lazy-loading"
 categories: React
 tag: [React, Next.js, code-splitting, lazy-loading, performance]
 toc: true
